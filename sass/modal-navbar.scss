@@ -1,3 +1,42 @@
+@use 'variables';
+@use 'mixins';
+
 .modal-navbar-background{
     display: none;
+    
+   @include mixins.modal-backgronund;
+     
+      
+
+     .navbar-modal{
+        background-color: black;
+        width: 250px;
+        height: 100%;
+        padding: 28px 24px;
+     }
+
+     .navbar_items{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+        list-style: none;
+     }
+     .navbar_link{
+        text-decoration: none;
+        color:variables.$Very_vark_blue;
+        font-weight: 700;
+        font-size: 1.1em;
+     }
+
+     .modal-navbar-background-close-icon{
+        cursor: pointer;
+     }
+   
+
+
+    
 }
+
+    

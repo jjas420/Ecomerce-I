@@ -6,9 +6,11 @@
 
 
 .main-container{
+    position: relative;
     width: 375px;
     border: 2px solid white;
     margin: auto;
+
     @media(min-width: 1115px){
         width: 1115px;
     }

@@ -19,7 +19,7 @@ body {
 @media (min-width: 1115px) {
   .header {
     height: 112px;
-    border-bottom: 1px solid hsl(219deg, 9%, 45%);
+    border-bottom: 1px solid hsl(217deg, 91%, 58%);
   }
 }
 .header .header-navegation {
@@ -74,7 +74,7 @@ body {
 }
 .header__cart--notificacion {
   display: none;
-  background-color: hsl(26deg, 100%, 55%);
+  background-color: hsl(253deg, 93%, 59%);
   width: 15px;
   height: 12px;
   border-radius: 16px;
@@ -91,13 +91,65 @@ body {
 
 .navbar {
   display: none;
+  border: 3px solid green;
+  width: 400px;
+}
+.navbar .navbar_items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .navbar_link {
+  text-decoration: none;
+  color: hsl(217deg, 91%, 58%);
+  display: block;
+  height: 112px;
+  padding-top: 42px;
+}
+.navbar .navbar_link:hover {
+  border-bottom: 4px solid hsl(253deg, 93%, 59%);
+}
+@media (min-width: 1115px) {
+  .navbar {
+    display: block;
+  }
 }
 
 .modal-navbar-background {
   display: none;
+  background-color: rgba(255, 254, 254, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.modal-navbar-background .navbar-modal {
+  background-color: black;
+  width: 250px;
+  height: 100%;
+  padding: 28px 24px;
+}
+.modal-navbar-background .navbar_items {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  list-style: none;
+}
+.modal-navbar-background .navbar_link {
+  text-decoration: none;
+  color: hsl(218deg, 36%, 96%);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.modal-navbar-background .modal-navbar-background-close-icon {
+  cursor: pointer;
 }
 
 .main-container {
+  position: relative;
   width: 375px;
   border: 2px solid white;
   margin: auto;

@@ -1,3 +1,32 @@
+@use 'variables';
+
 .navbar{
     display: none;
+    border: 3px solid green;
+    width: 400px;
+    .navbar_items{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        
+    }
+
+    
+    .navbar_link{
+        text-decoration: none;
+        color: variables.$Dark_grayish_blue;
+        display: block;
+        height: 112px;
+        padding-top: 42px;
+
+
+    }
+    .navbar_link:hover{
+        border-bottom: 4px solid variables.$orange;
+    }
+    @media(min-width: 1115px){
+        display: block;
+       
+    }
 }
