@@ -12,6 +12,21 @@
     height: 100%;
     width: 100%;
 }
+@mixin img-btn-pre ($left){
+    background-color: variables.$White;
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+        border-radius:50%;
+        position: absolute;
+        top: 170px;
+        left: $left;
+        &:hover{
+            cursor: pointer;
+
+           } 
+
     
+}
 
     

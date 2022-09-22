@@ -1,0 +1,29 @@
+@use 'variables';
+@use 'mixins.scss';
+
+.gallery{
+    .gallery__image-content{
+        border: 3px solid blue;
+        height: 300px;
+        width: 100%;
+        background-image: url('../images/image-product-1.jpg');
+        background-position-y:-35px;
+        background-size: cover;
+
+       
+    }
+    
+    .icon-previous{
+        @include mixins.img-btn-pre(15px);
+        
+
+       
+    }
+    .icono-next{
+        @include mixins.img-btn-pre(320px);
+        
+
+       
+            
+    }
+}

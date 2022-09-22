@@ -25,7 +25,6 @@ body {
 .header .header-navegation {
   width: 190px;
   height: 100%;
-  border: solid 3px red;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,7 +43,6 @@ body {
   }
 }
 .header__cart-avatar {
-  border: solid 3px green;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,7 +89,6 @@ body {
 
 .navbar {
   display: none;
-  border: 3px solid green;
   width: 400px;
 }
 .navbar .navbar_items {
@@ -145,6 +142,41 @@ body {
   font-size: 1.1em;
 }
 .modal-navbar-background .modal-navbar-background-close-icon {
+  cursor: pointer;
+}
+
+.gallery .gallery__image-content {
+  border: 3px solid blue;
+  height: 300px;
+  width: 100%;
+  background-image: url("../images/image-product-1.jpg");
+  background-position-y: -35px;
+  background-size: cover;
+}
+.gallery .icon-previous {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 170px;
+  left: 15px;
+}
+.gallery .icon-previous:hover {
+  cursor: pointer;
+}
+.gallery .icono-next {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 170px;
+  left: 320px;
+}
+.gallery .icono-next:hover {
   cursor: pointer;
 }
 
