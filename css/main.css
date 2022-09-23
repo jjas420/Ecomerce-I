@@ -113,19 +113,20 @@ body {
 }
 
 .modal-navbar-background {
-  display: none;
   background-color: rgba(255, 254, 254, 0.5);
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 1;
 }
 .modal-navbar-background .navbar-modal {
   background-color: black;
   width: 250px;
   height: 100%;
   padding: 28px 24px;
+  display: none;
 }
 .modal-navbar-background .navbar_items {
   margin-top: 50px;
@@ -178,6 +179,44 @@ body {
 }
 .gallery .icono-next:hover {
   cursor: pointer;
+}
+.gallery .gallery_thumnails {
+  display: none;
+}
+@media (min-width: 1115px) {
+  .gallery .gallery_thumnails {
+    display: block;
+  }
+}
+
+@media (min-width: 1115px) {
+  .gallery .icon-previous {
+    position: absolute;
+    background-color: hsl(0deg, 0%, 100%);
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 266px;
+    left: 160px;
+  }
+  .gallery .icon-previous:hover {
+    cursor: pointer;
+  }
+  .gallery .icono-next {
+    background-color: hsl(0deg, 0%, 100%);
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 266px;
+    left: 798px;
+  }
+  .gallery .icono-next:hover {
+    cursor: pointer;
+  }
 }
 
 .main-container {

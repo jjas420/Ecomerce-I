@@ -2,6 +2,7 @@
 @use 'mixins.scss';
 
 .gallery{
+   
     .gallery__image-content{
         border: 3px solid blue;
         height: 300px;
@@ -11,19 +12,52 @@
         background-size: cover;
 
        
-    }
+    } 
+
+
+        
     
     .icon-previous{
-        @include mixins.img-btn-pre(15px);
+        @include mixins.img-btn-pre(15px,170px);
         
 
        
     }
     .icono-next{
-        @include mixins.img-btn-pre(320px);
+        @include mixins.img-btn-pre(320px,170px);
         
 
        
             
     }
+    .gallery_thumnails{
+        display: none;
+        @media (min-width:1115px){
+            display: block;
+
+        }
+    }
+
+}
+.gallery{
+    @media (min-width:1115px){
+        .icon-previous{
+            position: absolute;
+
+            @include mixins.img-btn-pre(160px,266px);
+        
+            
+    
+        
+        }
+        .icono-next{
+            @include mixins.img-btn-pre(798px,266px);
+            
+    
+        
+                
+        }
+
+      
+}
 }

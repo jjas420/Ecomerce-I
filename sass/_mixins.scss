@@ -11,15 +11,16 @@
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 1;
 }
-@mixin img-btn-pre ($left){
+@mixin img-btn-pre ($left,$top){
     background-color: variables.$White;
         width: 40px;
         height: 40px;
         padding: 12px;
         border-radius:50%;
         position: absolute;
-        top: 170px;
+        top: $top;
         left: $left;
         &:hover{
             cursor: pointer;
