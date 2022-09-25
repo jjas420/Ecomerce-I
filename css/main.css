@@ -112,15 +112,6 @@ body {
   }
 }
 
-.modal-navbar-background {
-  background-color: rgba(255, 254, 254, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
 .modal-navbar-background .navbar-modal {
   background-color: black;
   width: 250px;
@@ -217,6 +208,51 @@ body {
   .gallery .icono-next:hover {
     cursor: pointer;
   }
+}
+
+.details {
+  border: 3px solid green;
+  padding: 24px;
+}
+.details__company {
+  color: red;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+.details__title {
+  font-size: 1.7em;
+  margin-bottom: 12px;
+}
+.details__description {
+  font-size: 0.94em;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.details__price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.details__now {
+  font-size: 1.8em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.details__discount {
+  font-size: 0.5em;
+  background-color: hsl(0deg, 95%, 59%);
+  padding: 4px;
+  border: 4px;
+}
+.details__before {
+  padding-top: 3px;
+  text-decoration: line-through;
 }
 
 .main-container {
