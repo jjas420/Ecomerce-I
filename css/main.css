@@ -10,6 +10,8 @@ body {
 }
 
 .header {
+  margin-top: -2px;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -253,6 +255,57 @@ body {
 .details__before {
   padding-top: 3px;
   text-decoration: line-through;
+}
+.details__button {
+  background-color: orange;
+  width: 100%;
+  height: 57px;
+  border-radius: 8%;
+  border: none;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.details__button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.input {
+  height: 57px;
+  display: flex;
+  justify-content: space-between;
+}
+.input__minus {
+  width: 24 px;
+  height: 100%;
+  padding: 23px 5px;
+}
+.input__minus:hover {
+  cursor: pointer;
+}
+.input__plus {
+  width: 24 px;
+  height: 100%;
+  padding: 19px 3px;
+}
+.input__plus:hover {
+  cursor: pointer;
+}
+.input__number {
+  width: 100%;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: "Kumbh Sans", sans-serif;
+  text-align: center;
+  outline: none;
 }
 
 .main-container {

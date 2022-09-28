@@ -1,6 +1,11 @@
 @use 'variables';
 
+
 .header{
+    //position: fixed;
+    //width: 1115px;
+    margin-top: -2px;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,6 +16,8 @@
         border-bottom: 1px solid variables.$Dark_grayish_blue; 
     }
     .header-navegation{
+
+
         width: 190px;
         height: 100%;
         display: flex;

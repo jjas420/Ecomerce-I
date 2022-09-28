@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use '_mixins.scss' as m;
 
 .details{
     border: 3px solid green;
@@ -54,6 +55,10 @@
         
          
         
+
+    }
+    &__button{
+        @include m.button;
 
     }
 
