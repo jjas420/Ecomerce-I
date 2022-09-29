@@ -140,7 +140,6 @@ body {
 }
 
 .gallery .gallery__image-content {
-  border: 3px solid blue;
   height: 300px;
   width: 100%;
   background-image: url("../images/image-product-1.jpg");
@@ -213,7 +212,6 @@ body {
 }
 
 .details {
-  border: 3px solid green;
   padding: 24px;
 }
 .details__company {
@@ -306,6 +304,41 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   text-align: center;
   outline: none;
+}
+
+.cart-modal {
+  width: 360px;
+  height: 260px;
+  border-radius: 8px;
+  position: absolute;
+  background-color: white;
+  color: black;
+  top: 75px;
+  right: 6px;
+  box-shadow: 3px 3px 10px;
+}
+.cart-modal__title {
+  font-weight: 700;
+  padding: 24px;
+}
+.cart-modal__datails-container {
+  border: solid 3px red;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.cart-modal .image-cart-modal {
+  width: 50px;
+}
+.cart-modal__delete {
+  margin-left: 25px;
+  border: green 4px solid;
+}
+.cart-modal__total {
+  border: red 4px solid;
+  padding: 24px;
 }
 
 .main-container {

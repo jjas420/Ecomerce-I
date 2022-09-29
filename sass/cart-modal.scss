@@ -1,0 +1,42 @@
+@use 'variables' as v;
+@use 'mixins.scss' as m;
+.cart-modal{
+    width: 360px;
+    height: 260px;
+    border-radius: 8px;
+    position: absolute;
+    
+    background-color: white;
+    color: black;
+    top:75px;
+    right: 6px;
+    box-shadow: 3px 3px 10px;
+    &__title{
+        font-weight: 700;
+        padding: 24px;
+    }
+    &__datails-container{
+        border:solid 3px red;
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        
+    }
+    .image-cart-modal{
+        width: 50px;
+    }
+
+    &__delete{
+        margin-left: 25px;
+        border: green 4px solid;
+    }
+    &__total{
+        border: red 4px solid;
+        padding: 24px;
+
+
+    }
+    
+}
