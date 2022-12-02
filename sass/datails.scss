@@ -57,8 +57,30 @@
 
     }
     &__button{
-        @include m.button;
+       @include m.button;
 
+    }
+
+    @media(min-width: 1115px){
+        padding-top: 60px;
+        &__title{
+            font-size: 2.7em;
+            margin-bottom: 48px;
+
+        }
+        &__description{
+            font-size: 0.9em;
+            margin-bottom:37px;
+        }
+        &__price{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__product--quantity{
+            display: flex;
+            gap: 32px;
+
+        }
     }
 
 }

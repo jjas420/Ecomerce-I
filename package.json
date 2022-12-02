@@ -1,0 +1,19 @@
+{
+  "name": "ecomerce-i",
+  "version": "1.0.0",
+  "description": "![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjas420/Ecomerce-I.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjas420/Ecomerce-I/issues"
+  },
+  "homepage": "https://github.com/jjas420/Ecomerce-I#readme"
+}

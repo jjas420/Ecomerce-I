@@ -14,10 +14,19 @@
 .main-container{
     position: relative;
     width: 375px;
-    border: 2px solid white;
+    border: 2px solid green ;
     margin: auto;
 
     @media(min-width: 1115px){
         width: 1115px;
+    }
+
+    .content{
+        @media(min-width: 1115px){
+
+            display: flex;
+            padding: 90px 50px;
+            gap: 124px;
+        }
     }
 }

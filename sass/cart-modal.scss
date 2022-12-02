@@ -1,6 +1,7 @@
 @use 'variables' as v;
 @use 'mixins.scss' as m;
 .cart-modal{
+    display: none;
     width: 360px;
     height: 260px;
     border-radius: 8px;
@@ -16,27 +17,33 @@
         padding: 24px;
     }
     &__datails-container{
-        border:solid 3px red;
         display: flex;
         align-items: center;
         align-content: space-between;
         justify-content: space-between;
         margin-bottom: 24px;
+        color: gray;
+        .as{
+            color: red;
+        }
         
     }
     .image-cart-modal{
         width: 50px;
     }
 
+    
+
     &__delete{
         margin-left: 25px;
-        border: green 4px solid;
     }
     &__total{
-        border: red 4px solid;
+        border: green($color: #000000) 4px solid;
         padding: 24px;
 
 
     }
-    
+    .cart-checkout{
+    @include m.button;
+    }
 }
