@@ -18,12 +18,14 @@
         color: variables.$Dark_grayish_blue;
         display: block;
         height: 112px;
-        padding-top: 42px;
+        padding-top: 48px;
+
 
 
     }
     .navbar_link:hover{
-        border-bottom: 4px solid variables.$orange;
+        border-bottom: 4px solid white;
+
     }
     @media(min-width: 1115px){
         display: block;

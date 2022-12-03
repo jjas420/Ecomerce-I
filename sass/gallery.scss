@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as v;
 @use 'mixins.scss';
 
 .gallery{
@@ -35,7 +35,17 @@
     .gallery_thumnails{
         display: none;
         @media (min-width:1115px){
-            display: block;
+            display: flex;
+            justify-content: space-between;
+
+            .gallery_thumnailss{
+                width: 90px;
+                border-radius: 16px;
+                &:hover{
+                    cursor: pointer;
+                    border: solid 2px v.$orange;
+                }
+            }
 
         }
     }
@@ -47,6 +57,9 @@
             position: absolute;
 
             @include mixins.img-btn-pre(160px,266px);
+            @media(min-width: 1115px){
+                display: none;
+            }
         
             
     
@@ -55,7 +68,9 @@
         .icono-next{
             @include mixins.img-btn-pre(798px,266px);
             
-    
+            @media(min-width: 1115px){
+                display: none;
+            }
         
                 
         }
@@ -63,6 +78,13 @@
       
 }
 @media(min-width: 1115px){
-    width: 500px;   
+    width: 500px; 
+     .gallery__image-content{
+        border-radius: 16px;
+        width: 446px;
+        height: 446px;
+        margin-bottom: 50px;
+     }
+      
 }
 }

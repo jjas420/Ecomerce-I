@@ -21,7 +21,10 @@ body {
 @media (min-width: 1115px) {
   .header {
     height: 112px;
-    border-bottom: 1px solid hsl(217deg, 91%, 58%);
+    border-bottom: 1px solid red;
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
   }
 }
 .header .header-navegation {
@@ -103,10 +106,10 @@ body {
   color: hsl(217deg, 91%, 58%);
   display: block;
   height: 112px;
-  padding-top: 42px;
+  padding-top: 48px;
 }
 .navbar .navbar_link:hover {
-  border-bottom: 4px solid hsl(253deg, 93%, 59%);
+  border-bottom: 4px solid white;
 }
 @media (min-width: 1115px) {
   .navbar {
@@ -181,7 +184,16 @@ body {
 }
 @media (min-width: 1115px) {
   .gallery .gallery_thumnails {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  .gallery .gallery_thumnails .gallery_thumnailss {
+    width: 90px;
+    border-radius: 16px;
+  }
+  .gallery .gallery_thumnails .gallery_thumnailss:hover {
+    cursor: pointer;
+    border: solid 2px hsl(253deg, 93%, 59%);
   }
 }
 
@@ -200,6 +212,13 @@ body {
   .gallery .icon-previous:hover {
     cursor: pointer;
   }
+}
+@media (min-width: 1115px) and (min-width: 1115px) {
+  .gallery .icon-previous {
+    display: none;
+  }
+}
+@media (min-width: 1115px) {
   .gallery .icono-next {
     background-color: hsl(0deg, 0%, 100%);
     width: 40px;
@@ -214,9 +233,20 @@ body {
     cursor: pointer;
   }
 }
+@media (min-width: 1115px) and (min-width: 1115px) {
+  .gallery .icono-next {
+    display: none;
+  }
+}
 @media (min-width: 1115px) {
   .gallery {
     width: 500px;
+  }
+  .gallery .gallery__image-content {
+    border-radius: 16px;
+    width: 446px;
+    height: 446px;
+    margin-bottom: 50px;
   }
 }
 
@@ -395,7 +425,7 @@ body {
 .main-container {
   position: relative;
   width: 375px;
-  border: 2px solid green;
+  border: 2px solid white;
   margin: auto;
 }
 @media (min-width: 1115px) {

@@ -13,7 +13,10 @@
     padding: 0 24px;
     @media (min-width:1115px){
         height: 112px;
-        border-bottom: 1px solid variables.$Dark_grayish_blue; 
+        border-bottom: 1px solid red;
+        width: 95%;
+        margin: auto;
+        margin-top: 30px;
     }
     .header-navegation{
 
