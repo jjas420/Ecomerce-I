@@ -1,10 +1,6 @@
 @use 'variables';
 
 @mixin modal-backgronund {
-    
-    
-
-  
     background-color: variables.$Black_;
     position: absolute;
 
@@ -15,7 +11,11 @@
     z-index: 1;
 }
 @mixin img-btn-pre ($left,$top){
-    background-color: variables.$White;
+    @media (max-width:1115px){
+        background-color: variables.$White;
+
+
+    }
         width: 40px;
         height: 40px;
         padding: 12px;

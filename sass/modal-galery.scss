@@ -1,0 +1,80 @@
+@use 'variables' as v; 
+@use 'mixins' as m;
+
+.modal-galerry{
+
+   &__bacground{
+    @include m.modal-backgronund;
+    display: none;
+    //display: grid;
+    place-content: center;
+
+   }
+   &__gallery{
+
+    width: 446px;
+    height: 446px;
+    
+
+
+   }
+   &__image-content{
+    background-image:url('../images/image-product-1.jpg');
+    
+    width: 443px;
+    height: 446px;
+    //centrar imagen de adentro
+    background-size:cover;
+    border-radius: 20px;
+    margin-bottom: 32px;
+    position: relative;
+   }
+   &__gallery_thumnails{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin:auto;
+    
+    
+
+
+   }
+
+  
+   &__galleryi_thumnails{
+    
+            border-radius: 16px;
+            width: 90px;
+            &:hover{
+                cursor: pointer;
+                border: solid 2px v.$orange;
+            }
+    
+
+    
+}
+&__iconprevious{
+  @include  m.img-btn-pre(21px, 217px);
+}
+
+  
+&__icono-next{
+    @include  m.img-btn-pre(400px, 217px);
+
+}
+&__icono-close-conteiner{
+
+    text-align: right;
+    height: 30px;
+}
+
+&__icono-close{
+    width: 16px;
+    &:hover{
+        cursor: pointer;
+        content: url(../images/icon-close\ orange.svg);
+    }
+}
+
+
+}

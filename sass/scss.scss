@@ -7,6 +7,7 @@
 @use 'datails';
 @use 'input';
 @use 'cart-modal';
+@use 'modal-galery';
 
 
 
@@ -14,7 +15,6 @@
 .main-container{
     position: relative;
     width: 375px;
-    border: 2px solid white ;
     margin: auto;
 
     @media(min-width: 1115px){
