@@ -38,7 +38,7 @@ addtoCart.addEventListener("click",()=>{
     
     cartNotificacion.style.display='block';
     draw();
-    /*if ( parseInt(cartNotificacion.innerText) > 0){
+    if ( parseInt(cartNotificacion.innerText) > 0){
         
 
         
@@ -47,7 +47,7 @@ addtoCart.addEventListener("click",()=>{
         
         cartNotificacion.style.display='none';
         
-    }*/
+    }
 });
 
 //mostrar el modal del carrito
@@ -56,8 +56,14 @@ const cartModal= document.querySelector('.cart-modal');
 cartIconBtn.addEventListener('click',()=>{
     //cartModal.style.display='block';
     cartModal.classList.toggle('show');
+        if(lastValue===0){
+            producContainert.innerHTML = '<p class="cart_emptyy">Your cart is empty</p>';
 
-        draw();
+            
+        }else{
+            draw();
+
+        }
    
 
        
@@ -65,14 +71,35 @@ cartIconBtn.addEventListener('click',()=>{
 
 });
 
-//borrar el contenido del carrito 
+//cambiar imagenes de la galeria
+const imageContainer=document.querySelector('.gallery__image-content');
+const previusBtnGalery=document.querySelector('.icon-previous');
+const nextBtnGalery=document.querySelector('.icono-next');
+let idImg=1;
+const imagesUrl=[
+    '../images/image-product-1.jpg',
+    '../images/image-product-2.jpg',
+    '../images/image-product-3.jpg',
+    '../images/image-product-4.jpg'
 
+
+]
+nextBtnGalery.addEventListener('click',()=>{
+
+    
+    changeNextImg(imageContainer);
+});
+
+previusBtnGalery.addEventListener('click',()=>{
+    changePreviusImg(imageContainer);
+
+})
+//funciones
 
 function draw(){
     //producContainert.innerHTML='<p class="cart_empty"> no esta vacio</p>';
   
         producContainert.innerHTML=`
-        <div class="cart-modal__total" >
         <div class="cart-modal__datails-container">
         <img src="./images/image-product-1-thumbnail.jpg" alt="cart-modal__datails-container" class="image-cart-modal">
             <div>
@@ -82,7 +109,7 @@ function draw(){
             </div>
             <img class="cart-modal__delete" src="./images/icon-delete.svg"  alt=" icon-delete">
             </div>
-            <button class="cart-checkout">  pagar</button></div>
+            <button class="cart-checkout">  pagar</button>
             `
         
              
@@ -103,4 +130,34 @@ function carro_vacio(){
         cartNotificacion.innerText = lastValue;
     });
     
+}
+
+function changeNextImg(imgConteiner){
+
+    if(idImg==4){
+        idImg=1;
+    }else{
+        idImg++;
+
+    }
+    
+
+    imgConteiner.style.backgroundImage='url(../images/image-product-'+idImg+'.jpg)'
+
+
+}
+
+function changePreviusImg(imgConteiner){
+
+    if(idImg==1){
+        idImg=4;
+    }else{
+        idImg--;
+
+    }
+    
+
+    imgConteiner.style.backgroundImage='url(../images/image-product-'+idImg+'.jpg)'
+
+
 }

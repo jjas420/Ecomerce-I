@@ -117,15 +117,30 @@ body {
   }
 }
 
+.header-navegation {
+  margin-left: -20px;
+}
+
+.header__cart-avatar {
+  margin-left: -200px;
+}
+
+.modal-navbar-background {
+  display: none;
+  margin-top: 120%;
+  margin-left: -420px;
+  border: solid blue 3px;
+}
 .modal-navbar-background .navbar-modal {
   background-color: black;
   width: 250px;
   height: 100%;
   padding: 28px 24px;
-  display: none;
+  display: block;
+  border: red 3px solid;
 }
 .modal-navbar-background .navbar_items {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

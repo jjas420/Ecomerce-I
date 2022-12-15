@@ -1,23 +1,33 @@
 @use 'variables';
 @use 'mixins';
+.header-navegation{
+   margin-left: -20px;
+}
 
+.header__cart-avatar{
+   margin-left: -200px;
+}
 .modal-navbar-background{
     
-    
+  
  //  @include mixins.modal-backgronund;
-     
-      
+     display: none;
+      margin-top:  120%;
+      margin-left: -420px;
 
+border: solid blue 3px;
      .navbar-modal{
         background-color: black;
         width: 250px;
         height: 100%;
         padding: 28px 24px;
-        display: none;
+        display: block;
+        
+        border: red 3px solid;
      }
 
      .navbar_items{
-        margin-top: 50px;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -36,8 +46,9 @@
      }
    
 
-
+   
     
 }
+
 
     
