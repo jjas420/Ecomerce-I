@@ -58,6 +58,7 @@ cartIconBtn.addEventListener('click',()=>{
     cartModal.classList.toggle('show');
         if(lastValue===0){
             producContainert.innerHTML = '<p class="cart_emptyy">Your cart is empty</p>';
+            cartNotificacion.style.display='none';
 
             
         }else{
@@ -94,6 +95,72 @@ previusBtnGalery.addEventListener('click',()=>{
     changePreviusImg(imageContainer);
 
 })
+//mostrar imagenes  en escritorio
+const imagesModal=document.querySelector('.modal-galerry__bacground');
+const closeModal=document.querySelector('.modal-galerry__icono-close');
+const botonprevius= document.querySelector('.modal-galerry__iconprevious');
+const botonNext=document.querySelector('.modal-galerry__icono-next');
+const modalImagen=document.querySelector('.modal-galerry__image-content');
+
+botonprevius.addEventListener('click',()=>{
+    changePreviusImg(modalImagen);
+    
+
+});
+botonNext.addEventListener('click',()=>{
+    changeNextImg(modalImagen);
+
+});
+
+
+imageContainer.addEventListener('click',()=>{
+    imagesModal.style.display='grid';
+
+
+
+});
+closeModal.addEventListener('click',()=>{
+    imagesModal.style.display='none';
+
+
+
+});
+//cambiar las imagenes de la galeria desde thumbails
+let thumbnails = document.querySelectorAll('.gallery_thumnails');
+
+thumbnails=[...thumbnails];
+thumbnails.forEach(thumbnail=>{
+    thumbnail.addEventListener('click',event=>{
+        console.log(event.target.id);
+        imageContainer.style.backgroundImage='url(../images/image-product-'+event.target.id+'.jpg)'
+
+    });
+})
+
+const modalGalerycont=document.querySelector('.modal-galerry__image-content');
+let modalThumbnails=document.querySelectorAll('.modal-galerry__gallery_thumnails');
+modalThumbnails=[...modalThumbnails];
+modalThumbnails.forEach(thumbnail=>{
+    thumbnail.addEventListener('click',event=>{
+        console.log(event.target.id.slice(-1));
+        event.target.id.slice(-1)
+        modalGalerycont.style.backgroundImage='url(../images/image-product-'+event.target.id.slice(-1)+'.jpg)'
+
+    });
+})
+//menu de hamburguesa 
+
+const modalMenu= document.querySelector('.icon-menu');
+let saleMenu=document.querySelector('.modal-navbar-background');
+let closeIcon=document.querySelector('.modal-navbar-background-close-icon');
+
+modalMenu.addEventListener('click',()=>{
+    saleMenu.style.display='grid';
+});
+closeIcon.addEventListener('click',()=>{
+    saleMenu.style.display='none';
+});
+
 //funciones
 
 function draw(){

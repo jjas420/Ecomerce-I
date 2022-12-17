@@ -1,15 +1,59 @@
 @use 'variables' as v; 
 @use 'mixins' as m;
+@media (max-width:1115px){
+    .modal-galerry__gallery{
+      display: none;
+    }
+    
+    .modal-galerry__image-content{
+        
 
+        z-index: -1;
+        display: none;
+    
+
+        
+
+    
+    }
+    .modal-galerry__bacground{
+        
+
+
+    }
+    
+    
+    .modal-galerry__gallery{
+        margin-top: -350px;
+        width: 100px;
+
+    }
+    .modal-galerry__galleryi_thumnails{
+        display: none;
+
+    }
+    
+   
+}
+
+@media(min-width: 1115px){
+   
 .modal-galerry{
+        
+    
+    &__bacground{
+        @include m.modal-backgronund;
 
-   &__bacground{
-    @include m.modal-backgronund;
-    display: none;
-    //display: grid;
-    place-content: center;
+ 
+     display: none;
+     //display: grid;
+     place-content: center;
+     
+ 
+    }
+    
 
-   }
+
    &__gallery{
 
     width: 446px;
@@ -19,7 +63,7 @@
 
    }
    &__image-content{
-    background-image:url('../images/image-product-1.jpg');
+    background-image:url('../images/image-product-2.jpg');
     
     width: 443px;
     height: 446px;
@@ -77,4 +121,5 @@
 }
 
 
+}
 }

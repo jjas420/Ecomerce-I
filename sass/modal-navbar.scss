@@ -7,15 +7,17 @@
 .header__cart-avatar{
    margin-left: -200px;
 }
+
+
 .modal-navbar-background{
     
   
- //  @include mixins.modal-backgronund;
+   @include mixins.modal-backgronund;
+     //display: grid;
      display: none;
-      margin-top:  120%;
-      margin-left: -420px;
 
-border: solid blue 3px;
+    
+
      .navbar-modal{
         background-color: black;
         width: 250px;
@@ -23,7 +25,6 @@ border: solid blue 3px;
         padding: 28px 24px;
         display: block;
         
-        border: red 3px solid;
      }
 
      .navbar_items{

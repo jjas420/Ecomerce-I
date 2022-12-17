@@ -126,10 +126,14 @@ body {
 }
 
 .modal-navbar-background {
+  background-color: rgba(65, 43, 43, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
   display: none;
-  margin-top: 120%;
-  margin-left: -420px;
-  border: solid blue 3px;
 }
 .modal-navbar-background .navbar-modal {
   background-color: black;
@@ -137,7 +141,6 @@ body {
   height: 100%;
   padding: 28px 24px;
   display: block;
-  border: red 3px solid;
 }
 .modal-navbar-background .navbar_items {
   margin-top: 30px;
@@ -457,90 +460,117 @@ body {
   opacity: 0.5;
 }
 
-.modal-galerry__bacground {
-  background-color: rgba(65, 43, 43, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  display: none;
-  place-content: center;
-}
-.modal-galerry__gallery {
-  width: 446px;
-  height: 446px;
-}
-.modal-galerry__image-content {
-  background-image: url("../images/image-product-1.jpg");
-  width: 443px;
-  height: 446px;
-  background-size: cover;
-  border-radius: 20px;
-  margin-bottom: 32px;
-  position: relative;
-}
-.modal-galerry__gallery_thumnails {
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-  margin: auto;
-}
-.modal-galerry__galleryi_thumnails {
-  border-radius: 16px;
-  width: 90px;
-}
-.modal-galerry__galleryi_thumnails:hover {
-  cursor: pointer;
-  border: solid 2px hsl(253deg, 93%, 59%);
-}
-.modal-galerry__iconprevious {
-  width: 40px;
-  height: 40px;
-  padding: 12px;
-  border-radius: 50%;
-  position: absolute;
-  top: 217px;
-  left: 21px;
-}
 @media (max-width: 1115px) {
+  .modal-galerry__gallery {
+    display: none;
+  }
+  .modal-galerry__image-content {
+    z-index: -1;
+    display: none;
+  }
+  .modal-galerry__gallery {
+    margin-top: -350px;
+    width: 100px;
+  }
+  .modal-galerry__galleryi_thumnails {
+    display: none;
+  }
+}
+@media (min-width: 1115px) {
+  .modal-galerry__bacground {
+    background-color: rgba(65, 43, 43, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: none;
+    place-content: center;
+  }
+  .modal-galerry__gallery {
+    width: 446px;
+    height: 446px;
+  }
+  .modal-galerry__image-content {
+    background-image: url("../images/image-product-2.jpg");
+    width: 443px;
+    height: 446px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-bottom: 32px;
+    position: relative;
+  }
+  .modal-galerry__gallery_thumnails {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin: auto;
+  }
+  .modal-galerry__galleryi_thumnails {
+    border-radius: 16px;
+    width: 90px;
+  }
+  .modal-galerry__galleryi_thumnails:hover {
+    cursor: pointer;
+    border: solid 2px hsl(253deg, 93%, 59%);
+  }
+  .modal-galerry__iconprevious {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 217px;
+    left: 21px;
+  }
+}
+@media (min-width: 1115px) and (max-width: 1115px) {
   .modal-galerry__iconprevious {
     background-color: hsl(0deg, 0%, 100%);
   }
 }
-.modal-galerry__iconprevious:hover {
-  cursor: pointer;
+@media (min-width: 1115px) {
+  .modal-galerry__iconprevious:hover {
+    cursor: pointer;
+  }
 }
-.modal-galerry__icono-next {
-  width: 40px;
-  height: 40px;
-  padding: 12px;
-  border-radius: 50%;
-  position: absolute;
-  top: 217px;
-  left: 400px;
+@media (min-width: 1115px) {
+  .modal-galerry__icono-next {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 217px;
+    left: 400px;
+  }
 }
-@media (max-width: 1115px) {
+@media (min-width: 1115px) and (max-width: 1115px) {
   .modal-galerry__icono-next {
     background-color: hsl(0deg, 0%, 100%);
   }
 }
-.modal-galerry__icono-next:hover {
-  cursor: pointer;
+@media (min-width: 1115px) {
+  .modal-galerry__icono-next:hover {
+    cursor: pointer;
+  }
 }
-.modal-galerry__icono-close-conteiner {
-  text-align: right;
-  height: 30px;
+@media (min-width: 1115px) {
+  .modal-galerry__icono-close-conteiner {
+    text-align: right;
+    height: 30px;
+  }
 }
-.modal-galerry__icono-close {
-  width: 16px;
+@media (min-width: 1115px) {
+  .modal-galerry__icono-close {
+    width: 16px;
+  }
+  .modal-galerry__icono-close:hover {
+    cursor: pointer;
+    content: url(../images/icon-close\ orange.svg);
+  }
 }
-.modal-galerry__icono-close:hover {
-  cursor: pointer;
-  content: url(../images/icon-close\ orange.svg);
-}
-
 .main-container {
   position: relative;
   width: 375px;
